@@ -61,28 +61,4 @@ You can test the GraphQL service locally using tools like Postman or GraphQL cli
 
 For deployment, you can use platforms like Heroku, AWS, or any other hosting service of your choice. Make sure to configure environment variables for sensitive data, such as database connection details and authentication secrets.
 
-## Service A File Structure
-
-The primary files and directories in Service A are as follows:
-
-- `index.js`: The main entry point of the GraphQL service, responsible for setting up the Apollo Server, connecting to MongoDB, and initiating communication with Service B.
-
-- `config.js`: Configuration file where you can specify the MongoDB connection URI.
-
-- `typeDefs.js`: GraphQL type definitions for your service. These can be updated automatically from Service B.
-
-- `userResolvers.js`: Resolvers for GraphQL operations related to user management.
-
-- `package.json`: Project dependencies and scripts for running the service.
-
-## Additional Notes
-
-- Service A is designed to work in conjunction with Service B. Service B should provide up-to-date GraphQL type definitions and UserModel files.
-
-- Ensure that both services are running and accessible to maintain synchronization between GraphQL schemas and database models.
-
-- For security reasons, always keep sensitive information, such as secret keys and database credentials, in environment variables.
-
-- Customize and extend the GraphQL schema and resolvers to implement additional functionality according to your project requirements.
-
 With Service A set up and running, you can build and expand your GraphQL backend while seamlessly updating GraphQL type definitions and database models from Service B.
