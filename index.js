@@ -21,7 +21,7 @@ async function updateTypeDefsFile() {
   }
 }
 
-// Function to fetch and update UserModel file
+// Function to fetch and update MongoDB Schema file
 async function updateUserModelFile() {
   try {
     const response = await axios.get("http://localhost:3001/mongodb-config");
